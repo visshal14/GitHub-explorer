@@ -167,6 +167,84 @@ button:disabled {
     font-size: 13px;
 }
 
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.check input {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    accent-color: var(--primary);
+}
+
+.language-bar {
+    display: flex;
+    height: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background: var(--bg);
+}
+
+.language-slice {
+    background: var(--muted);
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.tag-active {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.repo-about {
+    margin: 6px 0 10px 0;
+    font-size: 14px;
+}
+
+.repo-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 21px;
@@ -184,6 +262,10 @@ button:disabled {
 
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+
+    .toolbar .search {
+        flex: 1 1 100%;
     }
 }
 
