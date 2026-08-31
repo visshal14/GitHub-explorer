@@ -245,6 +245,32 @@ button:disabled {
     font-size: 13px;
 }
 
+.avatar-small {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px 4px 4px;
+}
+
+.recent {
+    margin-bottom: 24px;
+}
+
+.recent-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 21px;
