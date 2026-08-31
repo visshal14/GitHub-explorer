@@ -1,0 +1,134 @@
+:root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --primary: #2f81f7;
+    --danger: #f85149;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 26px;
+    margin: 0 0 6px 0;
+}
+
+h2 {
+    margin: 0 0 4px 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 20px 60px 20px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.error {
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    border-radius: var(--radius);
+    padding: 10px 12px;
+}
+
+input,
+select,
+button {
+    font: inherit;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 9px 12px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-plain {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--text);
+    font-size: 13px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 21px;
+    }
+}
+
+/* <!-- ℑ♑︎  亖⌽⎭🂱⎶☀️☀️⌶⍱   --> */
